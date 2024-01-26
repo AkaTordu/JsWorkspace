@@ -12,6 +12,7 @@ let z = x + y;  // 15
 console.log("Bonjour "+ name + ", vous avez " + age +" ans");
 
 let random = Math.floor(Math.random() * 100) + 1; // Nombre aléatoire de 1 à 100
+let bigrandom = Math.floor(Math.random() * 1000) + 1; // Nombre aléatoire de 1 à 100
 
 let nombre = random;
 
@@ -27,3 +28,12 @@ for (let test = 1; test <= 100; test++) { // Guessing du nombre random avec 1 en
     }
 }
 
+function calcul(nombre1, nombre2) {
+    return nombre1 + nombre2;
+}
+
+let resultat = calcul(random, bigrandom); // test avec les deux random numbers
+console.log("La somme est : " + resultat + " avec " + random + " plus " + bigrandom);
+
+let fruits = ["pomme", "banane", "orange"]; // Premier tableau de test
+console.log("J'ai trois éléments dans mon tableau, " + fruits[0] + " est le premier");
