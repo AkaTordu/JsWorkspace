@@ -36,4 +36,31 @@ let resultat = calcul(random, bigrandom); // test avec les deux random numbers
 console.log("La somme est : " + resultat + " avec " + random + " plus " + bigrandom);
 
 let fruits = ["pomme", "banane", "orange"]; // Premier tableau de test
-console.log("J'ai trois éléments dans mon tableau, " + fruits[0] + " est le premier");
+console.log("J'ai trois éléments dans mon tableau, " + fruits[0] + " est le premier");            // 0 = premier élement
+console.log("Tandis que " + fruits[1] + " est le deuxième, et " + fruits[2] +" est le troisième")  // et donc fruits[1] = 2e élément du tableau ainsi de suite
+
+// Premier Objet :
+let légume = {
+    couleur: "Vert",
+    origine: "France",
+    nom: "Concombre",
+    taille: 25,
+}
+// Appel au nom du légume
+console.log("Le nom de mon légume est le " + légume.nom)
+
+// Utilisation de this dans une fonction
+let légume2 = {
+    couleur: "Vert et Orange",
+    origine: "France",
+    nom: "Melon",
+    taille: 20,
+
+    informations: function () {
+        return "Le nom de mon légume est le " + this.nom + ", il vient de " + this.origine + ", mesure " + this.taille + "cm, et possède les couleurs " + this.couleur
+    }
+}
+// Affichage des informations de la fonction
+console.log(légume2.informations());
+
+
