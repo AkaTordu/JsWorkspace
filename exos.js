@@ -64,3 +64,32 @@ let légume2 = {
 console.log(légume2.informations());
 
 
+// Création d'un tableau contenant des objets //
+
+// Création d'un autre légume 
+let légume3 = {
+    couleur: "Vert",
+    origine: "France",
+    nom: "Concombre",
+    taille: 25,
+
+    informations: function () {
+        return "Le nom de mon légume est le " + this.nom + ", il vient de " + this.origine + ", mesure " + this.taille + "cm, et possède les couleurs " + this.couleur
+    }
+}
+
+// Création de potager le tableau qui va contenir les légumes
+let potager = [];
+potager.push(légume2);
+potager.push(légume3);
+
+for (let y = 0; y < potager.length; y++) { // y par comme base, tant que y est inférieur a la taille maximum du tablau potager, on incrémente + 1 à y
+    console.log(potager[y].informations()); // On affiche les informations de chaque élément du tableau par ordre croissant
+}
+
+
+// PASSAGE A LA MANIPULATION HTML //
+
+document.getElementById("bouton").addEventListener("click", function() {
+    document.getElementById("texte").style.color = "blue";
+});
