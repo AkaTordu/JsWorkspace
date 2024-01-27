@@ -100,3 +100,7 @@ async function fetchData() {
 }
 
 fetchData();
+
+// Test des constantes
+const AffichageLégume = `Le nom de mon légume 3 est le ${légume3.nom} et le nom de mon légume 2 est ${légume2.nom}`;
+console.log(AffichageLégume);
