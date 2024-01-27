@@ -87,9 +87,16 @@ for (let y = 0; y < potager.length; y++) { // y par comme base, tant que y est i
     console.log(potager[y].informations()); // On affiche les informations de chaque élément du tableau par ordre croissant
 }
 
+// Fonctions asynchrones manipulation de json
 
-// PASSAGE A LA MANIPULATION HTML //
+async function fetchData() {
+    try {
+        let response = await fetch('https://jsonplaceholder.typicode.com/todos/1');
+        let data = await response.json();
+        console.log(data);
+    } catch (error) {
+        console.error('Erreur lors de la récupération des données', error);
+    }
+}
 
-document.getElementById("bouton").addEventListener("click", function() {
-    document.getElementById("texte").style.color = "blue";
-});
+fetchData();

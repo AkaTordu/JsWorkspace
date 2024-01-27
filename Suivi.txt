@@ -1,0 +1,48 @@
+1. Introduction au JavaScript
+Concepts de base : Variables, types de données, opérateurs.
+Exercice : Créer des variables de différents types (string, number, boolean) et les manipuler.
+
+2. Structures de Contrôle
+Instructions conditionnelles : if, else, switch.
+Boucles : for, while, do-while.
+Exercice : Écrire un script qui utilise une boucle pour imprimer les nombres de 1 à 10.
+
+3. Fonctions
+Définition et invocation : Syntaxe de base, paramètres, valeur de retour.
+Portée des variables : Locale vs globale.
+Exercice : Créer une fonction qui calcule la somme de deux nombres.
+
+4. Objets et Tableaux
+Tableaux : Création, manipulation.
+Objets : Propriétés, méthodes, this.
+Exercice : Créer un objet représentant une voiture avec des propriétés comme marque, modèle et une méthode pour afficher ses informations.
+
+5. Manipulation du DOM
+Accès et modification du DOM : getElementById, querySelector.
+Événements : addEventListener.
+Exercice : Créer une page web avec un bouton qui, lorsqu'on clique dessus, change la couleur du texte d'un paragraphe.
+
+6. Asynchrone en JavaScript
+Callbacks : Introduction et utilisation.
+Promesses : Syntaxe et chaînage.
+Async/Await : Écriture de fonctions asynchrones.
+Exercice : Faire une requête à une API et afficher les résultats sur une page web.
+
+7. JavaScript Moderne
+ES6+ : let/const, template literals, arrow functions, destructuring.
+Modules : Import/export.
+Exercice : Refactoriser un ancien code JavaScript en utilisant les fonctionnalités ES6+.
+
+8. Tests et Débogage
+Tests unitaires : Introduction à Jest ou un autre framework de test.
+Débogage : Console, breakpoints.
+Exercice : Écrire des tests pour une fonction JavaScript simple.
+
+9. Projets Pratiques
+Petits projets : Un calculateur simple, un générateur de citations aléatoires, un jeu de devinettes.
+Projet intermédiaire : Un carnet d'adresses interactif.
+Projet avancé : Une application de liste de tâches avec stockage local.
+
+10. Ressources Complémentaires
+Documentation et référence : MDN Web Docs, W3Schools.
+Communauté et soutien : Stack Overflow, forums de développement web, groupes Meetup.
