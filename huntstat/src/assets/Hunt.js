@@ -5,36 +5,36 @@ let exemple = {
 }
 */
 
-let indice = {
+export const indice = {
     xp: "0",
     prime: "50"
 }
 
 // PVP - PLAYER KILLS
-let hunterOneStar = {
+export const hunterOneStar = {
     xp: "0",
     prime: "0"
 }
-let hunterTwoStar = {
+export const hunterTwoStar = {
     xp: "0",
     prime: "0"
 }
-let hunterThreeStar = {
+export const hunterThreeStar = {
     xp: "0",
     prime: "0"
 }
-let hunterFourStar = {
+export const hunterFourStar = {
     xp: "0",
     prime: "0"
 }
 
 // PVE - VERSUS WILD
-let goule = {
+export const goule = {
     xp: "20",
     prime: "0"
 }
 
-let ruche = {
+export const ruche = {
     xp: "60",
     prime: "0"
 }
