@@ -38,3 +38,18 @@ export const ruche = {
     xp: "60",
     prime: "0"
 }
+
+export const cerbère = {
+    xp: "40",
+    prime: "0"
+}
+
+export const cuirassé = {
+    xp: "60",
+    prime: "0"
+}
+
+export const immolateur = {
+    xp: "60",
+    prime: "0"
+}
