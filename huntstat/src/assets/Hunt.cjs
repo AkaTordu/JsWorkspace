@@ -3,13 +3,21 @@ const indice = {
     xp: 0,
     prime: 50
 };
+const repaire_localise = {
+    xp: 0,
+    prime: 25
+}
+const boss_tue = {
+    xp: 0,
+    prime: 25
+}
 
+// PVP - PLAYER INTERACTIONS
 const hunterOneStar = {
     xp: 0,
     prime: 0
 };
 
-// PVP - PLAYER INTERACTIONS
 const hunterTwoStar = {
     xp: 0,
     prime: 0
@@ -63,6 +71,8 @@ const sangsue = {
 // Exportation en utilisant module.exports pour le projet
 module.exports = {
     indice,
+    repaire_localise,
+    boss_tue,
     hunterOneStar,
     hunterTwoStar,
     hunterThreeStar,
@@ -86,6 +96,8 @@ const readline = require('readline').createInterface({ // demande de rentrer du 
 
 const monstres = { // chaque constante plus haut doit être mise ici, c'est le tableau qui contient les variables au dessus
     indice,
+    repaire_localise,
+    boss_tue,
     hunterOneStar,
     hunterTwoStar,
     hunterThreeStar,
