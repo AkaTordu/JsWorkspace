@@ -1,4 +1,4 @@
-// Définition de vos constantes
+// GAME ELEMENTS
 const indice = {
     xp: 0,
     prime: 50
@@ -9,6 +9,7 @@ const hunterOneStar = {
     prime: 0
 };
 
+// PVP - PLAYER INTERACTIONS
 const hunterTwoStar = {
     xp: 0,
     prime: 0
@@ -29,42 +30,37 @@ const reanimation = {
     prime: 0
 };
 
+// PVE - VERSUS WILD
 const goule = {
     xp: 20,
     prime: 0
 };
-
 const ruche = {
     xp: 60,
     prime: 0
 };
-
 const cerbere = {
     xp: 40,
     prime: 0
 };
-
 const cuirasse = {
     xp: 60,
     prime: 0
 };
-
 const immolateur = {
     xp: 60,
     prime: 0
 };
-
 const sac_a_viande = {
     xp: 60,
     prime: 0
 };
-
 const sangsue = {
     xp: 10,
     prime: 0
 };
 
-// Exportation en utilisant module.exports
+// Exportation en utilisant module.exports pour le projet
 module.exports = {
     indice,
     hunterOneStar,
@@ -83,12 +79,12 @@ module.exports = {
 
 // FONCTION DE CALCUL DE MONSTRE //
 
-const readline = require('readline').createInterface({
-    input: process.stdin,
-    output: process.stdout
+const readline = require('readline').createInterface({ // demande de rentrer du texte
+    input: process.stdin, // le texte en entrée
+    output: process.stdout // le texte en sortie
 });
 
-const monstres = { // chaque constante plus haut doit être mise ici
+const monstres = { // chaque constante plus haut doit être mise ici, c'est le tableau qui contient les variables au dessus
     indice,
     hunterOneStar,
     hunterTwoStar,
@@ -109,7 +105,6 @@ const monstres = { // chaque constante plus haut doit être mise ici
 const demanderMonstre = () => {
     // Affichage des options
     console.log('Il existe : ' + Object.keys(monstres).join(' / '));
-  
     // Demande du monstre tué
     readline.question('Quel monstre avez-vous tué ? ', (nomMonstre) => {
       // Vérifie si le monstre existe
