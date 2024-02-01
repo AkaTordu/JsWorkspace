@@ -1,75 +1,83 @@
 // GAME ELEMENTS
-const indice = {
+export const indice = {
     xp: 0,
-    prime: 50
+    prime: 50,
 };
-const repaire_localise = {
+
+export const repaire_localise = {
     xp: 0,
-    prime: 25
-}
-const boss_tue = {
+    prime: 25,
+};
+
+export const boss_tue = {
     xp: 0,
-    prime: 25
-}
+    prime: 25,
+};
 
 // PVP - PLAYER INTERACTIONS
-const hunterOneStar = {
+export const hunterOneStar = {
     xp: 0,
-    prime: 0
+    prime: 0,
 };
 
-const hunterTwoStar = {
+export const hunterTwoStar = {
     xp: 0,
-    prime: 0
+    prime: 0,
 };
 
-const hunterThreeStar = {
+export const hunterThreeStar = {
     xp: 350,
-    prime: 0
+    prime: 0,
 };
 
-const hunterFourStar = {
+export const hunterFourStar = {
     xp: 0,
-    prime: 0
+    prime: 0,
 };
 
-const reanimation = {
+export const reanimation = {
     xp: 100,
-    prime: 0
+    prime: 0,
 };
 
 // PVE - VERSUS WILD
-const goule = {
+export const goule = {
     xp: 20,
-    prime: 0
-};
-const ruche = {
-    xp: 60,
-    prime: 0
-};
-const cerbere = {
-    xp: 40,
-    prime: 0
-};
-const cuirasse = {
-    xp: 60,
-    prime: 0
-};
-const immolateur = {
-    xp: 60,
-    prime: 0
-};
-const sac_a_viande = {
-    xp: 60,
-    prime: 0
-};
-const sangsue = {
-    xp: 10,
-    prime: 0
+    prime: 0,
 };
 
-// Exportation en utilisant module.exports pour le projet
-module.exports = {
+export const ruche = {
+    xp: 60,
+    prime: 0,
+};
+
+export const cerbere = {
+    xp: 40,
+    prime: 0,
+};
+
+export const cuirasse = {
+    xp: 60,
+    prime: 0,
+};
+
+export const immolateur = {
+    xp: 60,
+    prime: 0,
+};
+
+export const sac_a_viande = {
+    xp: 60,
+    prime: 0,
+};
+
+export const sangsue = {
+    xp: 10,
+    prime: 0,
+};
+
+// Regrouper tous les éléments pour un export unique
+export const gameElements = {
     indice,
     repaire_localise,
     boss_tue,
@@ -84,7 +92,7 @@ module.exports = {
     cuirasse,
     immolateur,
     sac_a_viande,
-    sangsue
+    sangsue,
 };
 
 // FONCTION DE CALCUL DE MONSTRE //
