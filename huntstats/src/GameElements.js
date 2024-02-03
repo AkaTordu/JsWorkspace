@@ -1,0 +1,17 @@
+export const gameElements = {
+    indice: { xp: 0, prime: 50 },
+    repaire_localise: { xp: 0, prime: 25 },
+    boss_tue: { xp: 0, prime: 25 },
+    hunterOneStar: { xp: 0, prime: 0 },
+    hunterTwoStar: { xp: 0, prime: 0 },
+    hunterThreeStar: { xp: 350, prime: 0 },
+    hunterFourStar: { xp: 0, prime: 0 },
+    reanimation: { xp: 100, prime: 0 },
+    goule: { xp: 20, prime: 0 },
+    ruche: { xp: 60, prime: 0 },
+    cerbere: { xp: 40, prime: 0 },
+    cuirasse: { xp: 60, prime: 0 },
+    immolateur: { xp: 60, prime: 0 },
+    sac_a_viande: { xp: 60, prime: 0 },
+    sangsue: { xp: 10, prime: 0 },
+};
