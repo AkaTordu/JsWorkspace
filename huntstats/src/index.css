@@ -11,3 +11,77 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* Définition des variables de couleur et de police pour une cohérence dans l'application */
+:root {
+  --primary-color: #4a90e2; /* Bleu */
+  --background-color: #f0f2f5; /* Gris très clair */
+  --text-color: #333; /* Gris foncé pour le texte */
+  --button-color: #007bff; /* Bleu pour les boutons */
+  --button-hover-color: #0056b3; /* Bleu plus foncé au survol */
+  --font-primary: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  --font-code: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+code {
+  font-family: var(--font-code);
+}
+
+/* Amélioration du style des boutons */
+button {
+  background-color: var(--button-color);
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 5px; /* Arrondi des angles */
+}
+
+button:hover {
+  background-color: var(--button-hover-color);
+}
+
+/* Style pour les inputs et les select */
+input, select {
+  padding: 10px;
+  margin: 5px 0;
+  display: block;
+  width: 100%;
+  box-sizing: border-box; /* S'assure que padding et border sont inclus dans la largeur */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Amélioration de l'espacement et de l'alignement pour les labels */
+label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  display: block; /* S'assure que le label soit sur sa propre ligne */
+}
+
+/* Ajout de styles pour améliorer l'apparence des formulaires et sections */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.header {
+  background-color: var(--primary-color);
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+/* Ajout de styles pour les espacements et titres */
+h2 {
+  color: var(--primary-color);
+}

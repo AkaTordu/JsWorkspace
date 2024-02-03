@@ -21,7 +21,7 @@ const GameInterface = () => {
         <div>
             <h2>Calculateur de Récompenses</h2>
             <div>
-                <label htmlFor="monstre">Choisissez un monstre:</label>
+                <label htmlFor="monstre">Choisissez un monstre : </label>
                 <select id="monstre" value={nomMonstre} onChange={e => setNomMonstre(e.target.value)}>
                     {Object.keys(gameElements).map(monstre => (
                         <option key={monstre} value={monstre}>{monstre}</option>
@@ -29,7 +29,7 @@ const GameInterface = () => {
                 </select>
             </div>
             <div>
-                <label htmlFor="nombre">Nombre tués:</label>
+                <label htmlFor="nombre">Nombre tués : </label>
                 <input
                     id="nombre"
                     type="number"
@@ -39,7 +39,7 @@ const GameInterface = () => {
             </div>
             <button onClick={calculerResultat}>Calculer</button>
             <div>
-                <p>Total XP: {resultat.xp}, Total Prime: {resultat.prime}</p>
+                <p>Total XP: {resultat.xp}, Total Prime : {resultat.prime}</p>
             </div>
         </div>
     );
