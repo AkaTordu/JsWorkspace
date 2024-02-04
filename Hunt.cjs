@@ -14,6 +14,11 @@ export const boss_tue = {
     prime: 25,
 };
 
+export const contrat_rempli = { 
+    xp: 0, 
+    prime: 900
+};
+
 // PVP - PLAYER INTERACTIONS
 export const hunterOneStar = {
     xp: 0,
@@ -76,25 +81,6 @@ export const sangsue = {
     prime: 0,
 };
 
-// Regrouper tous les éléments pour un export unique
-export const gameElements = {
-    indice,
-    repaire_localise,
-    boss_tue,
-    hunterOneStar,
-    hunterTwoStar,
-    hunterThreeStar,
-    hunterFourStar,
-    reanimation,
-    goule,
-    ruche,
-    cerbere,
-    cuirasse,
-    immolateur,
-    sac_a_viande,
-    sangsue,
-};
-
 // FONCTION DE CALCUL DE MONSTRE //
 
 const readline = require('readline').createInterface({ // demande de rentrer du texte
@@ -106,6 +92,7 @@ const monstres = { // chaque constante plus haut doit être mise ici, c'est le t
     indice,
     repaire_localise,
     boss_tue,
+    contrat_rempli,
     hunterOneStar,
     hunterTwoStar,
     hunterThreeStar,

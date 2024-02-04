@@ -2,6 +2,7 @@ export const gameElements = {
     indice: { xp: 0, prime: 50 },
     repaire_localise: { xp: 0, prime: 25 },
     boss_tue: { xp: 0, prime: 25 },
+    contrat_rempli: { xp: 0, prime: 900},
     hunterOneStar: { xp: 0, prime: 0 },
     hunterTwoStar: { xp: 0, prime: 0 },
     hunterThreeStar: { xp: 350, prime: 0 },
