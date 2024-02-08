@@ -1,5 +1,5 @@
 export const gameElements = {
-    indice: { xp: 0, prime: 50, image: '/images/exemple.png' },
+    indice: { xp: 0, prime: 50, image: '/images/Indices/PremierIndice.png' },
     repaire_localise: { xp: 0, prime: 25, image: '/images/exemple.png'  },
     boss_tue: { xp: 0, prime: 25, image: '/images/exemple.png'  },
     contrat_rempli: { xp: 0, prime: 900, image: '/images/exemple.png' },
