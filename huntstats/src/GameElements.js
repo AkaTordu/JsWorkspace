@@ -3,7 +3,8 @@ export const gameElements = {
     repaire_localise: { xp: 0, prime: 25, image: '/images/exemple.png'  },
     boss_tue: { xp: 0, prime: 25, image: '/images/exemple.png'  },
     contrat_rempli: { xp: 0, prime: 900, image: '/images/exemple.png' },
-    bonus_place_nette: { xp: 0, prime: 25, image: '/images/exemple.png' },
+    bonus_place_nette: { xp: 0, prime: 25, image: '/images/exemple.png' }, // localiser - Tuer - Extraction
+    bonus_victoire_integrale: { xp: 0, prime: 25, image: '/images/exemple.png' }, // Toutes les primes de la carte
     hunterOneStar: { xp: 0, prime: 0, image: '/images/exemple.png'  },
     hunterTwoStar: { xp: 0, prime: 0, image: '/images/exemple.png'  },
     hunterThreeStar: { xp: 350, prime: 0, image: '/images/exemple.png'  },
