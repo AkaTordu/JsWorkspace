@@ -33,7 +33,7 @@ const GameInterface = () => {
                 </select>
             </div>
             <div>
-                <label htmlFor="nombre">Nombre tués:</label>
+                <label htmlFor="nombre">Nombre tués / Interactions :</label>
                 <input
                     id="nombre"
                     type="number"
