@@ -17,11 +17,11 @@ Dans le dossier : `npm test`
 *Créer un .gitignore avec dedans :*
 `node_modules/`
 
-*Install vue client:*
+*Install vue client :*
 `npm install -g @vue/cli`
 
 *Run le projet :*
 `npm run serve`
 
-*Install react-scripts:*
+*Install react-scripts :*
 `npm install react-scripts --save`
