@@ -20,8 +20,8 @@ Dans le dossier : `npm test`
 *Install vue client :*
 `npm install -g @vue/cli`
 
-*Run le projet :*
-`npm run serve`
+*Run le projet huntstats :*
+`npm run start`
 
 *Install react-scripts :*
 `npm install react-scripts --save`
