@@ -13,10 +13,10 @@ const GameInterface = () => {
             const xpTotale = element.xp * nombre;
             const primeTotale = element.prime * nombre;
             setResultat({ xp: xpTotale, prime: primeTotale });
-            setImage(element.image); // Met à jour l'image
+            setImage(element.image);
         } else {
             alert('Ce monstre n\'existe pas.');
-            setImage(''); // Réinitialise l'image si le monstre n'existe pas
+            setImage('');
         }
     };
 
@@ -27,8 +27,8 @@ const GameInterface = () => {
                 <label htmlFor="monstre">Choisissez un monstre:</label>
                 <select id="monstre" value={nomMonstre} onChange={e => setNomMonstre(e.target.value)}>
                     <option value="">Sélectionnez un monstre</option>
-                    {Object.keys(gameElements).map(monstre => (
-                        <option key={monstre} value={monstre}>{monstre}</option>
+                    {Object.entries(gameElements).map(([key, { name }]) => (
+                        <option key={key} value={key}>{name}</option>
                     ))}
                 </select>
             </div>

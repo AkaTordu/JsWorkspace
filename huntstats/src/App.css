@@ -1,12 +1,23 @@
+/* Définition des couleurs principales et des dimensions réutilisables */
+:root {
+  --main-bg-color: #282c34;
+  --link-color: #61dafb;
+  --text-color: white;
+  --logo-height: 40vmin;
+  --base-font-size: 10px;
+}
+
 .App {
   text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: var(--logo-height);
   pointer-events: none;
+  animation: App-logo-spin infinite 20s linear;
 }
 
+/* Gestion de la préférence de réduction de mouvement */
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -14,18 +25,18 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: var(--main-bg-color);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: calc(var(--base-font-size) + 2vmin);
+  color: var(--text-color);
 }
 
 .App-link {
-  color: #61dafb;
+  color: var(--link-color);
 }
 
 @keyframes App-logo-spin {

@@ -1,6 +1,6 @@
 export const gameElements = {
     indice: { xp: 0, prime: 50, image: '/images/Indices/PremierIndice.png' },
-    repaire_localise: { xp: 0, prime: 25, image: '/images/exemple.png'  },
+    repaire_localise: { xp: 0, prime: 25, image: '/images/exemple.png', name: 'Localisation de Repaire de Boss'  },
     boss_tue: { xp: 0, prime: 25, image: '/images/exemple.png'  },
     expulse: { xp: 0, prime: 300, image: '/images/exemple.png'  }, // Banissement du boss
     contrat_rempli: { xp: 0, prime: 900, image: '/images/exemple.png' },
