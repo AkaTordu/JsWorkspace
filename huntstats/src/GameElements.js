@@ -1,21 +1,23 @@
 export const gameElements = {
-    indice: { xp: 0, prime: 50, image: '/images/Indices/PremierIndice.png' },
-    repaire_localise: { xp: 0, prime: 25, image: '/images/exemple.png', name: 'Localisation de Repaire de Boss'  },
-    boss_tue: { xp: 0, prime: 25, image: '/images/exemple.png'  },
-    expulse: { xp: 0, prime: 300, image: '/images/exemple.png'  }, // Banissement du boss
-    contrat_rempli: { xp: 0, prime: 900, image: '/images/exemple.png' },
-    bonus_place_nette: { xp: 0, prime: 25, image: '/images/exemple.png' }, // localiser - Tuer - Extraction (bonus obtenable une fois par boss)
-    bonus_victoire_integrale: { xp: 0, prime: 25, image: '/images/exemple.png' }, // Toutes les primes de la carte
-    hunterOneStar: { xp: 0, prime: 0, image: '/images/exemple.png'  }, // Player kill 1 étoile
-    hunterTwoStar: { xp: 0, prime: 0, image: '/images/exemple.png'  }, // Player kill 2 étoiles
-    hunterThreeStar: { xp: 450, prime: 0, image: '/images/exemple.png'  }, // Player kill 3 étoiles
-    hunterFourStar: { xp: 0, prime: 0, image: '/images/exemple.png'  }, // Player kill 4 étoiles
-    reanimation: { xp: 100, prime: 0, image: '/images/exemple.png'  }, // Pour chaque réa
-    goule: { xp: 20, prime: 0, image: '/images/exemple.png'  }, // Normal mob
-    ruche: { xp: 60, prime: 0, image: '/images/exemple.png'  }, 
-    cerbere: { xp: 40, prime: 0, image: '/images/exemple.png'  },
-    cuirasse: { xp: 60, prime: 0, image: '/images/exemple.png'  },
-    immolateur: { xp: 60, prime: 0, image: '/images/exemple.png'  },
-    sac_a_viande: { xp: 60, prime: 0, image: '/images/exemple.png'  },
-    sangsue: { xp: 10, prime: 0, image: '/images/exemple.png'  },
+    indice: { xp: 0, prime: 50, image: '/images/Indices/PremierIndice.png', name: 'Indice(s)'},
+    repaire_localise: { xp: 0, prime: 25, image: '/images/exemple.png', name: 'Localisation(s) de Repaire(s) de Boss'},
+    boss_tue: { xp: 0, prime: 25, image: '/images/exemple.png', name: 'Boss Tué'},
+    banish: { xp: 0, prime: 300, image: '/images/exemple.png', name: 'Banissement du Boss'},
+    contrat_rempli: { xp: 0, prime: 900, image: '/images/exemple.png', name: 'Contrat Rempli - Extraction avec prime'},
+    bonus_place_nette: { xp: 0, prime: 25, image: '/images/exemple.png', name: "Bonus Place Nette : Localiser - Tuer - S'extraire (une fois par boss)"}, 
+    bonus_victoire_integrale: { xp: 0, prime: 25, image: '/images/exemple.png', name: 'Extraction en possédant toutes les primes de la carte' },
+    hunterOneStar: { xp: 0, prime: 0, image: '/images/exemple.png', name: 'Joueur Tué 1 Etoile'},
+    hunterTwoStar: { xp: 0, prime: 0, image: '/images/exemple.png', name: 'Joueur Tué 2 Etoiles'},
+    hunterThreeStar: { xp: 450, prime: 0, image: '/images/exemple.png', name: 'Joueur Tué 3 Etoiles'},
+    hunterFourStar: { xp: 0, prime: 0, image: '/images/exemple.png', name: 'Joueur Tué 4 Etoiles'},
+    hunterFiveStar: { xp: 0, prime: 0, image: '/images/exemple.png', name: 'Joueur Tué 5 Etoiles'},
+    hunterSixStar: { xp: 0, prime: 0, image: '/images/exemple.png', name: 'Joueur Tué 6 Etoiles'},
+    reanimation: { xp: 100, prime: 0, image: '/images/exemple.png', name: "Réanimation de joueur"},
+    goule: { xp: 20, prime: 0, image: '/images/exemple.png', name: 'Nombre de goules tuées'},
+    ruche: { xp: 60, prime: 0, image: '/images/exemple.png', name: "Nombre de Ruches tuées"}, 
+    cerbere: { xp: 40, prime: 0, image: '/images/exemple.png', name: "Nombre de cerbères tués"},
+    cuirasse: { xp: 60, prime: 0, image: '/images/exemple.png', name: "Nombre de Cuirassés tués"},
+    immolateur: { xp: 60, prime: 0, image: '/images/exemple.png', name: "Nombre d'Immolateurs tués"},
+    sac_a_viande: { xp: 60, prime: 0, image: '/images/exemple.png', name: "Nombre de Sacs à Viande tués"},
+    sangsue: { xp: 10, prime: 0, image: '/images/exemple.png', name: "Nombre de Sangsues tuées"},
 };
