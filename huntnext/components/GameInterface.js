@@ -25,9 +25,24 @@ export default function GameInterface() {
     setShowHistorique(!showHistorique);
   };
 
+  const handleMouseEnter = (e) => {
+    document.querySelectorAll(`.${styles.shadow}`).forEach(el => {
+      if (el !== e.currentTarget) {
+        el.classList.add(styles.shadowGray);
+      }
+    });
+  };
+  const handleMouseLeave = () => {
+    document.querySelectorAll(`.${styles.shadow}`).forEach(el => {
+      el.classList.remove(styles.shadowGray);
+    });
+  };
+  // pour utiliser les réactions quand la souris passe par dessus dans le return :
+  // <div className={styles.header} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>texte</div>
+
   return (
     <div className={styles.container}>
-      <div className={styles.zone}>
+      <div className={styles.zoom}>
         <div className={styles.header}>Choisissez votre monstre et nombre tués</div>
         <div className={styles.inputGroup}>
           <label htmlFor="monstre">Monstre : </label>
@@ -49,13 +64,13 @@ export default function GameInterface() {
         </div>
         <button onClick={calculerResultat}>Calculer</button>
       </div>
-      <div className={styles.zone}>
+      <div className={styles.zoom}>
         <div className={styles.header}>Total</div>
         <p>Total XP: {resultat.xp}, Total Prime: {resultat.prime}</p>
       </div>
       <button onClick={toggleHistorique} style={{ margin: '10px' }}>Afficher/Cacher Historique</button>
       {showHistorique && (
-        <div className={styles.zone} style={{ maxHeight: '200px', overflow: 'auto' }}>
+        <div className={styles.zoom} style={{ maxHeight: '200px', overflow: 'auto' }}>
           <div className={styles.header}>Historique</div>
           {historique.map((item, index) => (
             <div key={index} className={styles.historyItem}>
