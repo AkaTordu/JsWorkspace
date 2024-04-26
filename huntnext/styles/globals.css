@@ -9,7 +9,7 @@
 }
 
 body {
-  margin: 0;
+  margin: 30px;
   padding: 0;
   font-family: 'Roboto', sans-serif;
   background-color: var(--background-color);
@@ -29,19 +29,30 @@ a {
   text-decoration: none;
 }
 
+@keyframes colorFade {
+  0%, 100% {
+      background-color: white; /* Début et fin de l'animation en blanc */
+      color: black; /* Le texte reste noir */
+  }
+  50% {
+      background-color: black; /* Milieu de l'animation en noir */
+      color: white; /* Le texte change en blanc pour contraste */
+  }
+}
+
 button {
-  background-color: var(--primary-color);
-  color: white;
-  border: none;
+  border: 1px solid black; /* Bordure noire autour du bouton */
   padding: 8px 16px;
   border-radius: var(--border-radius);
   cursor: pointer;
   font-size: 16px;
-  transition: background-color 0.3s;
+  animation: colorFade 10s ease-in-out infinite; /* Appliquer l'animation avec une durée de 3 secondes */
+  transition: all 0.3s ease-in-out; /* Transition douce pour les autres propriétés si nécessaire */
 }
 
 button:hover {
-  background-color: var(--button-hover-color);
+  background-color: black; /* Couleur de fond noire au survol */
+  color: white; /* Changement de la couleur du texte en blanc pour contraste */
 }
 
 input[type="number"],
@@ -63,4 +74,25 @@ select:focus {
 img {
 max-width: 100%;
 height: auto;
+}
+
+/* Nouvelles classes pour le centrage et les animations */
+.welcome-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* prend toute la hauteur de la vue */
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.box {
+  width: 90%; /* réduire légèrement la largeur */
+  margin: 10px auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.box:hover {
+  transform: scale(0.95); /* réduction subtile quand la souris passe dessus */
 }
