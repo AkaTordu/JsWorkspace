@@ -1,4 +1,4 @@
-import styles from '../styles/home.module.css';
+import styles from '../styles/globals.css';  // Importe les styles globaux
 import GameInterface from '../components/GameInterface';  // Assure-toi que le chemin est correct
 
 export default function Home() {
