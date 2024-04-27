@@ -1,0 +1,43 @@
+/* frames.module.css */
+
+/* Animation Keyframes */
+@keyframes colorFade {
+    0%, 100% {
+      background-color: white; /* Début et fin de l'animation en blanc */
+      color: black; /* Le texte reste noir */
+    }
+    50% {
+      background-color: black; /* Milieu de l'animation en noir */
+      color: white; /* Le texte change en blanc pour contraste */
+    }
+}
+  
+  /* Bouton avec animation */
+.button-animation {
+    animation: colorFade 10s ease-in-out infinite;
+}
+  
+  /* Effet d'assombrissement pour overlay */
+.shadow:hover::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1; /* S'assure que le contenu est visible au-dessus du fond assombri */
+    pointer-events: none; /* Permet les interactions avec des éléments sous le voile */
+}
+  
+  /* Griser les autres zones non-hover */
+.shadowGray {
+    filter: grayscale(100%);
+    opacity: 0.5;
+    transition: filter 3s ease, opacity 3s ease;
+}
+  
+  /* Effet de zoom pour les boîtes */
+.box:hover {
+    transform: scale(0.95);
+}  
